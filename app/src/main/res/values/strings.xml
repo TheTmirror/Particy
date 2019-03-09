@@ -1,0 +1,162 @@
+<!DOCTYPE resources [<!ENTITY appname "Particy"><!ENTITY info "Comming Soon!">]>
+
+<resources>
+
+    <!-- Dummy Daten -->
+    <string name="dummy_username">Team1</string>
+    <string name="dummy_password">passwort</string>
+    <string name="server_connection">http://10.0.2.2:8080/controller/</string>
+
+    <!-- App Strings -->
+    <string name="app_name">&appname;</string>
+    <string name="app_shared_preferences">com.mocoteam1.GLOBAL_PREFERENCES_FILE</string>
+    <string name="spotify_access_token">spotifyAccessToken</string>
+    <string name="spotify_access_token_expire_time">spotifyAccessTokenExpireTime</string>
+    <string name="spotify_access_token_save_time">spotifyAccessTokenSaveTime</string>
+
+    <!-- LoginActivity -->
+    <string name="login_activity_welcome">Zum Einloggen bitte Benutzername und Passwort angeben</string>
+    <string name="login_activity_username_hint">Benutzername</string>
+    <string name="login_activity_password_hint">Passwort</string>
+    <string name="login_activity_login_error">Die eingegebenen Daten sind nicht korrekt</string>
+    <string name="login_activity_ok_button">Login</string>
+    <string name="login_activity_create_account_button_text">Account anlegen</string>
+    <string name="login_activity_account_creation_error_text">Account konnte nicht erstellt werden</string>
+
+    <!-- CreateAccount -->
+    <string name="create_account_name_hint">Email</string>
+    <string name="create_account_password_hint">Passwort</string>
+    <string name="create_account_repeated_password_hint">Passwort wiederholen</string>
+    <string name="create_account_create_button_text">Account erstellen</string>
+    <string name="create_account_error_text_email">Die Email muss ein @ Zeichen enthalten</string>
+    <string name="create_account_error_text_password_no_match">Die Passwörter stimmen nicht überein</string>
+    <string name="create_account_error_text_password_to_short">Das Passwort ist zu kurz</string>
+
+    <string-array name="radius_array">
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>250</item>
+    </string-array>
+
+    <string name="gps_tracking_filter_text">Filter:</string>
+
+    <string-array name="filter_array">
+        <item>Kategorie 1</item>
+        <item>Kategorie 2</item>
+        <item>Kategorie 3</item>
+        <item>Kategorie 4</item>
+    </string-array>
+
+    <!-- Menu -->
+    <string name="menu_logout_text">Logout</string>
+    <string name="menu_verwaltung_text">Accountverwaltung</string>
+
+    <!-- CreateParty -->
+    <string name="create_party_name_text">Party erstellen</string>
+    <string name="create_party_name_hint">Partyname</string>
+    <string name="create_party_use_playlist_text">Bestehende Playlist als Basis nutzen:</string>
+    <string name="create_party_use_playlist_toggle_on">Ja</string>
+    <string name="create_party_use_playlist_toggle_off">Nein</string>
+    <string name="create_party_add_allowed_text">Nutzer dürfen Songs zur Party hinzufügen</string>
+    <string name="create_party_add_allowed_toggle_on">Ja</string>
+    <string name="create_party_add_allowed_toggle_off">Nein</string>
+    <string name="create_party_radius_text">Radius:</string>
+    <string name="create_party_radius_unit_text">m</string>
+    <string name="create_party_confirm_button">Party erstellen!</string>
+    <string name="create_party_error_title">Party konnte nicht erstellt werden!</string>
+    <string name="create_party_error_message">
+        Die Party konnte nicht erstellt werden. Dies mag am Serverstatus oder sonstigem
+        liegen. Bitte probiere es später erneut.
+    </string>
+    <string name="create_party_error_ok">Verstanden</string>
+    <string name="create_party_explanation_title">Wir brauchen diese Permission!</string>
+    <string name="create_party_explanation_message">
+        Wir brauchen die Berechtigung, auf den aktuellen Standort zuzugreifen. Bitte genehmige
+        uns diese, sonst kannst du keine Partys erstellen.
+    </string>
+    <string name="create_party_explanation_ok">Verstanden</string>
+    <string name="create_party_no_location_provider_title">Kein Standortservice verfügbar!</string>
+    <string name="create_party_no_location_provider_message">
+        Wir müssen zum Erstellen einer Party auf deinen Standort zugreifen. Bitte aktiviere
+        einen Standortdienst.
+    </string>
+    <string name="create_party_no_location_provider_ok">Verstanden</string>
+
+    <!-- PartyDetailview -->
+    <string name="party_name_text">Hier wird der Name stehen</string>
+    <string name="party_owner_text">Hier wird der Owner stehen</string>
+    <string name="party_playlist_preload_name">defaultName</string>
+    <string name="party_playlist_preload_artist">defaultArtist</string>
+    <string name="party_playlist_preload_album">defaultAlbum</string>
+    <string name="party_party_remove_success_text">Die Party wurde gelöscht</string>
+    <string name="party_party_leave_success_text">Die Party wurde verlassen</string>
+    <string name="party_party_closed_notification_title">Die Party wurde gelöscht</string>
+    <string name="party_party_closed_notification_message">Der Eigentümer dieser Party hat die Party aufgelöst.</string>
+    <string name="party_party_closed_notification_understood_button_text">Verstanden</string>
+
+        <!-- PlayerInitError -->
+        <string name="party_player_init_error_title">Spotify Player konnte nicht initialisiert werden</string>
+        <string name="party_player_init_error_message">
+            Der Spotifyplayer konnte nicht initialisiert werden. Dies kann verschiedene Gründe haben.
+            Das Nutzen des Playlist Play Service ist nicht möglich.
+        </string>
+        <string name="party_party_player_init_error_understood_button_text">Verstanden</string>
+
+        <!-- EmptyPlaylistNotification -->
+        <string name="party_empty_playlist_notification_title">Die Playlistlist ist leer</string>
+        <string name="party_empty_playlist_notification_message">
+            Die Playlist ist leer. Füge neue Songs hinzu um sie zu füllen.
+            </string>
+        <string name="party_empty_playlist_notification_understood_button_text">Verstanden</string>
+
+    <!-- PlaylistAdapter -->
+    <string name="playlist_adapter_out_of_range_notification_title">Du befindest dich nicht auf der Party!</string>
+    <string name="playlist_adapter_out_of_range_notification_message">
+        Du befindest dich momentan außerhalb des Radius der Party. Um Voten zu können begib dich zurück
+        auf die Party.
+    </string>
+    <string name="playlist_adapter_out_of_range_notification_understood_button_text">Verstanden</string>
+
+    <!-- Depricated
+    Owner
+    <string name="party_vorschlaege_text">Vorgeschlagen</string>
+    <string name="party_qr_code_text">QR Code der Party anzeigen</string>
+    <string name="party_delete_button">Party beenden</string>
+    <string name="party_error_title">Party konnte nicht verlassen werden!</string>
+    <string name="party_error_message">
+        Die Party konnte nicht verlassen werden. Dies mag am Serverstatus oder sonstigem
+        liegen. Bitte probiere es später erneut.
+    </string>
+    <string name="party_error_ok">Verstanden</string>
+    User
+    <string name="party_used_leave_party_button">Party verlassen</string>-->
+
+    <!-- SearchSongSample -->
+    <string name="search_song_sample_search_hint">Name/Artist/Album</string>
+    <string name="search_song_sample_name_text">Songname:</string>
+    <string name="search_song_sample_artist_text">Artist:</string>
+    <string name="search_song_sample_album_text">Album:</string>
+    <string name="search_song_sample_name_hint">Name</string>
+    <string name="search_song_sample_artist_hint">Artist</string>
+    <string name="search_song_sample_album_hint">Album</string>
+    <string name="search_song_sample_add_button_text">Song hinzufügen</string>
+    <string name="search_song_sample_add_multiple_songs_button_text">Gleich eine ganze Liste hinzufügen</string>
+
+    <!-- JoinPartyExample -->
+    <string name = "join_party_example_title">Party finden</string>
+    <string name="join_party_example_name_hint">Partyname</string>
+    <string name="join_party_example_owner_hint">Owner</string>
+    <string name="join_party_example_join_button_text">Beitreten</string>
+
+    <!-- ShowQRCode -->
+    <string name="show_qr_code_information_text">
+        Scan diesen QR Code mit einem anderen Smartphone um
+        einer bestehenden Party beizutreten!
+    </string>
+
+    <!-- AccountManagement -->
+    <string name="account_management_successfully_added_spotify">
+        Du hast deinen Spotify-Account erfolgreich verknüpft.
+    </string>
+</resources>

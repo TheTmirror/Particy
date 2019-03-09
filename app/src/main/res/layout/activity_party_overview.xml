@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.mocoteam1.musicmatch.PartyOverview"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/partyOverviewCreateNewPartyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/partyOverviewJoinExistingPartyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@android:color/transparent"
+        app:srcCompat="@drawable/nueeplaylist" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/partyOverviewJoinExistingPartyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/partyOverviewCreateNewPartyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/partyOverviewCreateNewPartyButton"
+        app:layout_constraintTop_toTopOf="@+id/partyOverviewCreateNewPartyButton"
+        app:rippleColor="@android:color/transparent"
+        app:srcCompat="@drawable/suchenachplaylist" />
+
+    <ListView
+        android:id="@+id/partyOverviewListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

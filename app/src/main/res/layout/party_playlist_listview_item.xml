@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/partyPlaylistListviewItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/party_playlist_preload_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/partyPlaylistListViewItemArtist"
+            app:layout_constraintEnd_toStartOf="@+id/partyPlaylistListviewItemUpvoteButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/partyPlaylistListViewItemArtist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/party_playlist_preload_artist"
+            android:textColor="@color/colorPrimaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/partyPlaylistListviewItemAlbum"
+            app:layout_constraintEnd_toStartOf="@+id/partyPlaylistListviewItemUpvoteButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/partyPlaylistListviewItemName" />
+
+        <TextView
+            android:id="@+id/partyPlaylistListviewItemAlbum"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/party_playlist_preload_album"
+            android:textColor="@color/colorPrimaryTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/partyPlaylistListviewItemUpvoteButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/partyPlaylistListViewItemArtist" />
+
+        <TextView
+            android:id="@+id/partyPlaylistListviewItemVotesum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@integer/party_playlist_listview_item_default_votes"
+            android:textColor="@color/colorPrimaryTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/partyPlaylistListviewItemDownvoteButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/partyPlaylistListviewItemUpvoteButton"
+            android:layout_width=" 48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:tint="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/partyPlaylistListviewItemVotesum"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/upvote" />
+
+        <ImageButton
+            android:id="@+id/partyPlaylistListviewItemDownvoteButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/downvote" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

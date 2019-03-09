@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item android:id="@+id/logout"
+        android:title="@string/menu_logout_text"/>
+
+    <item android:id="@+id/verwaltung"
+        android:title="@string/menu_verwaltung_text"/>
+
+    <!--item android:id="@+id/play"
+        android:title="Play Song" />
+
+    <item android:id="@+id/playlist"
+        android:title="Get Playlists" />
+
+    <item android:id="@+id/validate"
+        android:title="AccessToken Validation Test" /-->
+</menu>

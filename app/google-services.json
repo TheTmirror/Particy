@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "551024590856",
+    "firebase_url": "https://musicmatch-ed4bf.firebaseio.com",
+    "project_id": "musicmatch-ed4bf",
+    "storage_bucket": "musicmatch-ed4bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551024590856:android:6d4e4068f62b06aa",
+        "android_client_info": {
+          "package_name": "com.mocoteam1.musicmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551024590856-cukgl91829ulqm29nd3e14mius8get72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mocoteam1.musicmatch",
+            "certificate_hash": "229c1f5b7ad21a6e635f44855666a09f52f8ca2d"
+          }
+        },
+        {
+          "client_id": "551024590856-5ehhotl4ja08qbtfbhfh4kthok1l2tno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm6bId2pBMa9povpYdxy770qtcvTlDkX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551024590856-5ehhotl4ja08qbtfbhfh4kthok1l2tno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

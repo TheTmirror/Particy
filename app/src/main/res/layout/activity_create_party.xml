@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.mocoteam1.musicmatch.CreateParty">
+
+    <TextView
+        android:id="@+id/createPartyNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_party_name_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createPartyNameEntryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/hint_font"
+        android:ems="10"
+        android:hint="@string/create_party_name_hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryTextColor"
+        android:textColorHint="@color/colorPrimaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPartyNameText" />
+
+    <TextView
+        android:id="@+id/createPartyUsePlaylistText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_party_use_playlist_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toStartOf="@+id/createPartyUsePlaylistToggle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPartyNameEntryText" />
+
+    <ToggleButton
+        android:id="@+id/createPartyUsePlaylistToggle"
+        style="@style/Base.TextAppearance.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttons"
+        android:textColor="@color/font"
+        android:textOff="@string/create_party_use_playlist_toggle_off"
+        android:textOn="@string/create_party_use_playlist_toggle_on"
+        app:layout_constraintBaseline_toBaselineOf="@+id/createPartyUsePlaylistText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createPartyUsePlaylistText" />
+
+    <FrameLayout
+        android:id="@+id/createPartyPlaylistOverviewFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPartyUsePlaylistText">
+
+        <ListView
+            android:id="@+id/createPartyPlaylistListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/createPartyAddAllowedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_party_add_allowed_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toStartOf="@+id/createPartyAddAllowedToggle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPartyPlaylistOverviewFrameLayout" />
+
+    <ToggleButton
+        android:id="@+id/createPartyAddAllowedToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttons"
+        android:text="ToggleButton"
+        android:textColor="@color/font"
+        android:textOff="@string/create_party_add_allowed_toggle_off"
+        android:textOn="@string/create_party_add_allowed_toggle_on"
+        app:layout_constraintBaseline_toBaselineOf="@+id/createPartyAddAllowedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createPartyAddAllowedText" />
+
+    <TextView
+        android:id="@+id/createPartyRadiusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_party_radius_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/createPartyRadiusEntryText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPartyAddAllowedText" />
+
+    <EditText
+        android:id="@+id/createPartyRadiusEntryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/hint_font"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@integer/create_party_default_radius"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimaryTextColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/createPartyRadiusText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createPartyRadiusText" />
+
+    <TextView
+        android:id="@+id/createPartyRadiusUnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/create_party_radius_unit_text"
+        android:textColor="@color/colorPrimaryTextColor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/createPartyRadiusEntryText"
+        app:layout_constraintStart_toEndOf="@+id/createPartyRadiusEntryText" />
+
+    <Button
+        android:id="@+id/createPartyConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="130dp"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/create_party_confirm_button"
+        android:textColor="@color/font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

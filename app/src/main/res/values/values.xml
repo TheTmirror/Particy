@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="create_party_default_radius">200</integer>
+    <integer name="party_playlist_listview_item_default_votes">0</integer>
+
+</resources>

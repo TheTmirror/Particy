@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TODO: Development Colors wieder entfernen-->
+    <!-- Development Colors -->
+    <color name="under_construction_font_color">#47000000</color>
+    <color name="warning_color">#b91e1e</color>
+    <color name="normal_background">#FFFFFF</color>
+    <color name="search_color">#ddff01</color>
+
+    <!-- CreateParty -->
+    <color name="create_party_playlist_background_color">#4976ba</color>
+
+    <!-- Party -->
+    <color name="party_playlistlist_background_color">#4976ba</color>
+    <color name="party_qr_code_text_color">#5d86cc</color>
+
+    <!-- ShowQRCode -->
+    <color name="show_qr_code_code_indicator">#5f5381</color>
+
+    <!-- PartyOverview -->
+    <color name="party_overview_own_party_indicator">#5998b7</color>
+    <color name="party_overview_floating_action_buttons_background_tint">#00ffffff</color>
+
+    <color name="colorPrimary">#151515</color>
+    <color name="colorPrimaryDark">#2d2d2d</color>
+    <color name="colorAccent">#0081fa</color>
+    <color name="colorMusicDetail">#151515</color>
+    <color name="colorPrimaryTextColor">#ffffff</color>
+
+    <!-- Von Steffi -->
+    <!--<color name="background">#000000</color>-->
+    <color name="buttons_shadow">#ff0004</color>
+
+    <!-- New Colors -->
+    <color name="background">#151515</color>
+    <color name="list_background">#212121</color>
+    <color name="font">#ffffff</color>
+    <color name="hint_font">#f1f1f1</color>
+    <color name="buttons">#0081fa</color>
+</resources>
